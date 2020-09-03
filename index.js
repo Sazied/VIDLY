@@ -94,3 +94,5 @@ const validateGenre = (genre) => {
   });
   return schema.validate(genre);
 };
+
+//This is a new comment 
