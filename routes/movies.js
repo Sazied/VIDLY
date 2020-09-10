@@ -8,8 +8,8 @@ const router = express.Router();
 
 // GET
 router.get("/", async (req, res) => {
-  const movie = await Movie.find().sort("name");
-  res.send(movie);
+  const movies = await Movie.find().sort("name");
+  res.send(movies);
 });
 
 router.get("/:id", async (req, res) => {

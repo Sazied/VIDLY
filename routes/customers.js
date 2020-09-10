@@ -8,8 +8,8 @@ const router = express.Router();
 // Get requests
 
 router.get("/", async (req, res) => {
-  const customer = await Customer.find().sort("name");
-  res.send(customer);
+  const customers = await Customer.find().sort("name");
+  res.send(customers);
 });
 
 router.get("/:id", async (req, res) => {
